@@ -260,7 +260,7 @@ def solve_path(listRes, start, end):
 
 def main():
     import sys
-    import tkinter
+    import Tkinter
 
     sys.setrecursionlimit(4096)
 
@@ -308,8 +308,8 @@ def main():
         path = None
 
     cell_size = 20
-    master = tkinter.Tk()
-    canvas = tkinter.Canvas(master, width=size_x * cell_size + 1,
+    master = Tkinter.Tk()
+    canvas = Tkinter.Canvas(master, width=size_x * cell_size + 1,
                             height=size_y * cell_size + 1,
                             bd=0, highlightthickness=0, relief='ridge')
     canvas.pack()
@@ -347,7 +347,7 @@ def main():
     master.title('Maze')
     master.lift()
     master.call('wm', 'attributes', '.', '-topmost', True)
-    tkinter.mainloop()
+    Tkinter.mainloop()
 
 
 if __name__ == '__main__':
